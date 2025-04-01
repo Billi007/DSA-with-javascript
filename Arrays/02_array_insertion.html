@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Insert element in Array</title>
+    <script>
+      // console.log("before", data);
+
+      // for(let i = data.length - 1; i >=0; i--){
+      //     if(i>= index){
+      //         data[i+1] = data[i];
+      //         if(i==index){
+      //             data[i] = newElement;
+      //         }
+      //     }
+      // }
+      // console.log(data)
+
+    
+
+      function getElement() {
+        const position = document.getElementById("index").value;
+        const element = document.getElementById("element").value;
+        element = parseInt(element);
+        const result = document.getElementById("result");
+        
+        let data = [60, 30, 10, 67, 40];
+        
+      for(let i = data.length - 1; i >=0; i--){
+          if(i>= position){
+              data[i+1] = data[i];
+              if(i==position){
+                  data[i] = element;
+              }
+          }
+      }
+      result.innerHTML = `Data is: ${data}` ;
+      }
+
+    </script>
+  </head>
+  <body>
+    <input id="index" type="text" placeholder="enter position" />
+    <input id="element" type="text" placeholder="enter element" />
+    <button onclick="getElement()">Get element</button>
+    <p id="result"></p>
+  </body>
+</html>

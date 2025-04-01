@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traverse</title>
+    <script>
+        let data = [9,45,1,7,32,79,23,65,84];
+
+        // for(let i =0; i < data.length; i++){
+        //     document.write(`${data[i]} <br>` );
+        // }
+
+        function getElements(){
+            let inputVal = document.getElementById('input').value;
+            if(inputVal < data.length && typeof parseInt(inputVal) === "number"){
+                alert(data[inputVal]);
+            }
+            else{
+                alert("Invalid input! Please enter a input less than or equal to " + data.length);
+                return;
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input">
+    <button onclick="getElements()">Get elements</button>
+</body>
+</html>
