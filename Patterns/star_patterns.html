@@ -1,11 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Star Pattrens</title>
-</head>
-<body>
-    
-</body>
-</html>
+    <script>
+      //1.
+    //     let num = 4;
+    //     let string = "";
+    //     for (let i = 1; i <= num; i++) {
+    //       for (let j = 1; j <= num; j++) {
+    //         string += "* ";
+    //       }
+    //       string += "\n";
+    //     }
+    //     console.log(string);
+
+    //     //2.
+    //     let num1 = 5;
+    //     let string1 = "";
+    //     for(let i = 0; i <= num1; i++){
+    //       for(let j=0; j < i; j++){
+    //           string1 += "* "
+    //       }
+    //       string1 += '\n'
+    //     }
+    //     console.log(string1);
+
+    //   //3.
+    //   let num2 = 5;
+    //   let string2 = "";
+
+    //   for (let i = 1; i <= num2; i++) {
+    //     for (let j = 1; j <= num2 - i + 1; j++) {
+    //       string2 += "* ";
+    //     }
+    //     string2 += "\n";
+    //   }
+    //   console.log(string2);
+
+
+    //   //4.
+      let num3 = 5;
+      let string3 = "";
+
+      for (let i = 1; i <= 2*num3-1; i++) {
+        let totalNumCol = i > num3 ? 2*num3-i : i;
+        for (let j = 1; j <= totalNumCol; j++) {
+          string3 += "* ";
+        }
+        string3 += "\n";
+      }
+      console.log(string3);
+
+      //5.
+
+      let num4 = 5;
+      let string4 = "";
+
+      for (let i = 1; i <= 2*num4-1; i++) {
+
+        let totalNumCol = i > num4 ? 2*num4-i : i;
+        let totalSpace = num4 - totalNumCol
+
+        for(let k =1; k <= totalSpace; k++){
+            string4 += " "
+        }
+        for (let j = 1; j <= totalNumCol; j++) {
+          string4 += "* ";
+        }
+        string4 += "\n";
+      }
+      console.log(string4);
+    </script>
+  </head>
+  <body></body>
+</html> 
+ 
