@@ -18,6 +18,7 @@ let n = arr.length;
 // console .log(ans)   
 //TC - O(n2) 
 //SC - O(1)
+
                 
 
 //better solution  
@@ -42,4 +43,12 @@ let n = arr.length;
 //TC - O(3n)
 //SC - O(maxNum)
 
+
 //optimal solution
+// let xorr = 0
+// for(let i=0; i<n; i++){
+// xorr = xorr ^ arr[i]
+// }
+// console.log(xorr)
+//O(n)
+//O(1)

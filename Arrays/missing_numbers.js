@@ -1,3 +1,5 @@
+let arr = [1, 2, 4, 5];
+let n = arr.length;
 //Find missing numbers.
 
 //Brute solution
@@ -35,8 +37,6 @@
 //SC - O(n)
 
 //1st optimal solution
-let arr = [1, 2, 4, 5];
-let n = arr.length;
 
 // let num = n+1;
 // let sum = num * (num + 1)/2

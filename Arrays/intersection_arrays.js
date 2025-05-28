@@ -1,7 +1,7 @@
 //Intersection of two sorted arrays.
 
 
-//Brute force
+//Brute force (hashing)
 // let intersectionArr = []
 // let visitedArr = new Array(arr2.length).fill(0)
 // let i=0; 
@@ -32,13 +32,13 @@ let j=0;
 
 while(i < arr1.length && j < arr2.length){
     if(arr1[i] < arr2[j]){
-     i++;
-    }else if(arr1[i]> arr2[j]){
+        i++
+    }else if(arr2[j] < arr1[i]){
         j++
-    }else{
+    }else {
         unionArr.push(arr1[i])
-        i++;
-        j++;
+      i++;
+      j++;
     }
 }
 console.log(unionArr)
