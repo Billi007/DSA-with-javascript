@@ -165,3 +165,33 @@
 // console.log(digits)
 // //TC - O(n)    n-1
 // //SC - O(1)
+
+
+//contains duplicate - Leetcode
+// let arr = [1,2,1]
+// let hash = new Array(4).fill(0)
+// let contains = false
+
+// for(let i =0; i<arr.length; i++){
+//     hash[arr[i]]++
+// }
+// for(let i=0; i<hash.length; i++){
+//     if(hash[i] > 1){
+//         contains = true
+//     }
+
+// }
+// console.log(contains)
+
+// let set = new Set();
+// let seen = 0
+
+// for(let num of arr){
+//     set.add(num)
+
+//     if(arr[seen]>1){
+//         contains = true
+//     }
+// }
+// console.log(contains)
+

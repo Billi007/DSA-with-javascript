@@ -37,8 +37,5 @@ let n = arr.length;
 // //SC - O(1)
 
 
-//optimal
-let arr = [12, 35, 1, 10, 34, 1]     //O(n log n)
-let max = -1
-let Second_laregest = -1
+
 

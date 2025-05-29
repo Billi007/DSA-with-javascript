@@ -1,6 +1,6 @@
-// let array = [1,0,2,3,2,0,0,4,5,1];
+let array = [1,0,2,3,2,0,0,4,5,1];
+let n = array.length
 //let temp = [];
-
 
 //BRUTE FORCE SOLUTION
 //extract all nov zero elments from and put into temp        O(n)
@@ -14,7 +14,7 @@
             //    array[i] = temp[i]
             // }
             
-            // //fill all the remaining elements in array with zero        O(n- x)
+            // //fill all the remaining places in array with zero        O(n- x)
             // for(let i = temp.length;i <array.length;i++){             
                 //     array[i] = 0
                 // }
