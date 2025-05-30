@@ -43,6 +43,6 @@ let n = array.length
 //         j++;
 //     }
 // }
-// console.log(n2)
+// console.log(arr)
 //TC = O(n)
 //SC = O(1)

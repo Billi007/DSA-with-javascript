@@ -1,4 +1,4 @@
-let array = [2,4,7,1,3,5,8,6];
+let array = [0,1,2,0,1,2,1,2,0,0,0,1];
 let low = 0
 let high = array.length - 1;
 
