@@ -40,7 +40,7 @@ let n = arr.length;
 //     }
 // }
 // console.log(ans)
-//TC - O(3n)
+//TC - O(3n) 
 //SC - O(maxNum)
 
 
