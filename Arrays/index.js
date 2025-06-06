@@ -195,21 +195,42 @@
 // }
 // console.log(contains)
 
-let arr = [0,1,0,3,12]
-let n =arr.length
-let j = -1;
+// let arr = [0,1,0,3,12]
+// let n =arr.length
+// let j = -1;
+
+// for(let i=0; i<n;i++){
+//     if(arr[i] == 0){
+//         j = i
+//         break;
+//     }
+// }
+
+// for(let i = j+1 ; i<n; i++){
+// if(arr[i] !== 0){
+//  [arr[i], arr[j]] = [arr[j], arr[i]]
+//  j++
+// }
+// }
+// console.log(arr)
+
+let arr = [3,0,1];
+let n = arr.length;
+let ans;
+
+// let hash = new Array(n+1).fill(0);
+
+// for(let i =0; i<n; i++){
+//     hash[arr[i]] = 1
+// }
+// for(let i=1; i<hash.length; i++){
+//     if(hash[i] == 0){
+//         ans = i
+//     }
+// }
 
 for(let i=0; i<n;i++){
-    if(arr[i] == 0){
-        j = i
-        break;
-    }
+    ans = ans ^ arr[i]
 }
 
-for(let i = j+1 ; i<n; i++){
-if(arr[i] !== 0){
- [arr[i], arr[j]] = [arr[j], arr[i]]
- j++
-}
-}
-console.log(arr)
+console.log(ans)
