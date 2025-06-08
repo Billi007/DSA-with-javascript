@@ -1,5 +1,5 @@
-let arr = [102,4,100,1,101,3,2,1,1];
-let n = arr.length;
+// let arr = [102,4,100,1,101,3,2,1,1];
+// let n = arr.length;
 
 // //brute force
 // function ls(arr,num){
@@ -29,3 +29,4 @@ let n = arr.length;
 // console.log(longestConsecutive(arr))
 //TC - O(n2)
 //SC - O(1)
+
